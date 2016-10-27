@@ -12,7 +12,7 @@ Include scrollpunch.js in your document (Requires jQuery).
 Call scrollpunch(trigger,reset,offset) in your main JS file.
 e.g.
 ```js
-scrollpunch('.myElementToAnimate',.myResetPoint,'200');
+scrollpunch('.myElementToAnimate','.myResetPoint','200');
 ```
 ####trigger = determines element that should be animated when reached 
 ####reset = determines an element that resets the animation 
