@@ -25,7 +25,9 @@
 	//only fires the above onScroll event if element is present on page - (called on doc ready)
 	var scrollPunch = function(trigger,reset,offset){ 
 		if($(trigger).length>0){
-			addClassOnScroll(trigger,reset,offset);
+			$(trigger).each(function(){
+				addClassOnScroll(this,reset,offset);
+			});
 		}
 	};
 
